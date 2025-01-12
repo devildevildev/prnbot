@@ -55,7 +55,7 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-10
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://text1:text1@cluster0.0lnolxg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+# DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -90,7 +90,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/The_hell_king_movie_group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/the_hell_king_updates')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Developer_Devil_01')
 DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/the_hell_king_updates')
-OWNERID = int(os.environ.get('OWNERID', '6075512585 5256724194'))  # Replace with the actual admin ID
+OWNERID = int(os.environ.get('OWNERID', '6075512585'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
