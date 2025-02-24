@@ -1,4 +1,3 @@
-
 import sys
 import glob
 import importlib
@@ -43,12 +42,11 @@ botStartTime = time.time()
 
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
-DeendayalBot.start()
-loop = asyncio.get_event_loop()
 
 async def Deendayal_start():
     print('\n')
     print('Initalizing Deendayal Dhakad Bot')
+    await DeendayalBot.start()
     bot_info = await DeendayalBot.get_me()
     DeendayalBot.username = bot_info.username
     await initialize_clients()
@@ -99,11 +97,13 @@ async def Deendayal_start():
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
+    
     await web.TCPSite(app, bind_address, PORT).start()
     await idle()
     
 if __name__ == '__main__':
     try:
+        loop = asyncio.get_event_loop()
         loop.run_until_complete(Deendayal_start())
     except KeyboardInterrupt:
-        logging.info('Service Stopped Bye 👋')  
+        logging.info('Service Stopped Bye 👋')
