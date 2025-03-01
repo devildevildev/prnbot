@@ -77,7 +77,7 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Developer_Devil_01') 
 # ============================
 # Link Shortener Configuration
 # ============================
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net ')
 SHORTLINK_API = environ.get('SHORTLINK_API', '9ea91a2c95f97bf82e4362fd37e45f3c86120644')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Developer_Devil_01')  # Tutorial video link for opening shortlink website
