@@ -1,5 +1,5 @@
 
-FROM python:3.12.9-slim-buster
+FROM Python-3.12.8-slim-buster
 RUN apt update && apt upgrade -y && apt install git -y
 WORKDIR /Princess
 RUN pip3 install --no-cache-dir virtualenv
